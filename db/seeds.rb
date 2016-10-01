@@ -7,8 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-
-
 Filial.create(nomefilial: 'Campos Centro',uf: 'RJ', telefone: '(22)2726-2861')
 Filial.create(nomefilial: 'Guarus',uf: 'RJ', telefone: '(22)2726-2861')
 
@@ -38,5 +36,17 @@ Funcionario.create(matricula: '4444.4.444.4444', nome: 'Rui',
 	salario: 2200, sexo: 'M', dtadmissao: '2016-04-01', 
 	foto: '' , setor_id: 3, cargo_id: 4)
 
-Usuario.create(email: 'mjvamorim@gmail.com', encrypted_password: '$2a$11$yNVx5ekr/FVkbMrZ1Vli9OMQ8M3uJvPDeUotGLaA.onQrtDGQFZWe' )
+Usuario.delete_all
+
+u=Usuario.new
+u.email = 'mjvamorim@gmail.com'
+u.password= '12345678'
+if u.valid?
+	u.save
+else
+	p u.errors
+end
+
+
+
 
