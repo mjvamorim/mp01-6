@@ -1,0 +1,78 @@
+<%= form_for(@funcionario) do |f| %>
+  <div class="form-inputs">
+    <% if @funcionario.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@funcionario.errors.count, "error") %> prohibited this funcionario from being saved:</h2>
+
+        <ul>
+        <% @funcionario.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :matricula %><br>
+      <%= f.text_field :matricula, :id => "matricula" %>
+    </div>
+    <div class="field">
+      <%= f.label :nome %><br>
+      <%= f.text_field :nome %>
+    </div>
+    <div class="field">
+      <%= f.label :endereco %><br>
+      <%= f.text_field :endereco %>
+    </div>
+    <div class="field">
+      <%= f.label :telefone %><br>
+      <%= f.text_field :telefone %>
+    </div>
+    <div class="field">
+      <%= f.label :salario %><br>
+      <%= f.text_field :salario %>
+    </div>
+    <div class="field">
+      <%= f.label :sexo %><br>
+      <%= f.radio_button :sexo, 'M', :checked => true %> Masculino
+      <%= f.radio_button :sexo, 'F' %> Feminino
+    </div>
+    <div class="field">
+      <%= f.label :dtadmissao %><br>
+      <%= f.text_field :dtadmissao ,  class: "datepicker" %>
+    </div>
+     
+    <div class="field">
+      <%= f.label :setor_id %><br>
+      <%= f.select :setor_id, options_for_select(Setor.all.map{|m|[m.nomesetor, m.id]},f.object.setor_id) %>
+    </div>
+    <div class="field">
+      <%= f.label :cargo_id %><br>
+      <%= f.select :cargo_id, options_for_select(Cargo.all.map{|m|[m.nomecargo, m.id]},f.object.cargo_id) %>
+    </div>
+
+    <div>
+      <%= f.label :foto %>
+      <%= image_tag @funcionario.foto_url, class: 'foto'  if @funcionario.foto? %>
+      <%= f.file_field :foto, label: 'Foto' , input_html: {accept: ('application/jpg') } %>
+      <br/>
+    </div>
+
+
+
+
+
+    <div class="actions">
+      <%= f.submit 'Salvar', :class => 'btn btn-primary' %>
+    <%= link_to ' Voltar', funcionarios_path ,  class: "btn btn-default " %>
+    </div>
+  </div>
+<% end %>
+
+<script>
+
+$(document).ready(function(){
+  $('.datepicker').datepicker({format: 'dd-mm-yyyy'});
+  $('#matricula').inputmask("9999.9.999.9999");  
+});
+</script>

@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Funcionarios</h1>
+<hr/>
+    <%= render 'formbusca' %>
+<hr/>
+<table >
+  <thead>
+    <tr>
+      <th>Matricula</th>
+      <th>Nome</th>
+      <th>Endereco</th>
+      <th>Telefone</th>
+      <th>Salario</th>      
+      <th>Sexo</th>
+      <th>Cargo</th>
+      <th>Setor</th>
+      <th>Ação</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @funcionarios.each do |funcionario| %>
+      <tr>
+        <td><%= funcionario.matricula %></td>
+        <td><%= funcionario.nome %></td>
+        <td><%= funcionario.endereco %></td>
+        <td><%= funcionario.telefone %></td>
+        <td><%= funcionario.salario %></td>        
+        <td><%= funcionario.sexo %></td>
+        <td><%= funcionario.cargo.nomecargo if funcionario.cargo %></td>
+        <td><%= funcionario.setor.nomesetor if funcionario.setor %></td>
+        <td>
+          <%= link_to ' ', edit_funcionario_path(funcionario),  class: "glyphicon glyphicon-pencil" %>
+          <%= link_to ' ', funcionario, method: :delete, data: { confirm: 'Are you sure?' } , class: "glyphicon glyphicon-trash" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+ <%= will_paginate @funcionarios, previous_label: "Anterior", next_label: "Próxima" %> <br/>
+ <%= link_to 'Novo Funcionario', new_funcionario_path%>
+
+
+

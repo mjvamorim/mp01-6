@@ -1,0 +1,336 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bo",
+				"border"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<%= form_for(@funcionario) do |f| %>\n  <div class=\"form-inputs\">\n    <% if @funcionario.errors.any? %>\n      <div id=\"error_explanation\">\n        <h2><%= pluralize(@funcionario.errors.count, \"error\") %> prohibited this funcionario from being saved:</h2>\n\n        <ul>\n        <% @funcionario.errors.full_messages.each do |message| %>\n          <li><%= message %></li>\n        <% end %>\n        </ul>\n      </div>\n    <% end %>\n\n    <div class=\"field\">\n      <%= f.label :matricula %><br>\n      <%= f.text_field :matricula, :id => \"matricula\" %>\n    </div>\n    <div class=\"field\">\n      <%= f.label :nome %><br>\n      <%= f.text_field :nome %>\n    </div>\n    <div class=\"field\">\n      <%= f.label :endereco %><br>\n      <%= f.text_field :endereco %>\n    </div>\n    <div class=\"field\">\n      <%= f.label :telefone %><br>\n      <%= f.text_field :telefone %>\n    </div>\n    <div class=\"field\">\n      <%= f.label :salario %><br>\n      <%= f.text_field :salario %>\n    </div>\n    <div class=\"field\">\n      <%= f.label :sexo %><br>\n      <%= f.radio_button :sexo, 'M', :checked => true %> Masculino\n      <%= f.radio_button :sexo, 'F' %> Feminino\n    </div>\n    <div class=\"field\">\n      <%= f.label :dtadmissao %><br>\n      <%= f.text_field :dtadmissao ,  class: \"datepicker\" %>\n    </div>\n    <div class=\"actions\">\n      <%= f.submit 'Salvar', :class => 'btn btn-primary' %>\n    <%= link_to ' Voltar', funcionarios_path ,  class: \"btn btn-default \" %>\n    </div>\n  </div>\n<% end %>\n\n",
+			"file": "app/views/funcionarios/_form.html.erb",
+			"file_size": 1636,
+			"file_write_time": 1447800976000000,
+			"settings":
+			{
+				"buffer_size": 1478,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/application.js",
+			"settings":
+			{
+				"buffer_size": 1019,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1591,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/application.css.scss",
+			"settings":
+			{
+				"buffer_size": 645,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Advanced Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/javascripts/application.js",
+		"/Users/Amorim/workspace/meuprojeto01/app/controllers/funcionarios_controller.rb",
+		"/Users/Amorim/workspace/meuprojeto01/Gemfile",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/layouts/application.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/stylesheets/application.css.scss",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/funcionarios/index.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/layouts/_latbar.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/images/citi2015.jpg",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/funcionarios/edit.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/funcionarios/show.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/funcionarios/new.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/funcionarios/_form.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/layouts/_navbar.html.erb",
+		"/Users/Amorim/workspace/AtivCompl/app/views/usuarios/_form.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/layouts/_navbarlateral.erb",
+		"/Users/Amorim/workspace/meuprojeto01/config/initializers/inflections.rb",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/images/linen_login.jpg",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/stylesheets/simple-side-bar.scss",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/stylesheets/bootstrap_and_overrides.css.scss",
+		"/Users/Amorim/workspace/meuprojeto01/app/models/funcionario.rb",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/paginas/index.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/config/routes.rb",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/images/header.png",
+		"/Users/Amorim/workspace/meuprojeto01/config/environments/production.rb",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/alunos/show.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/controllers/application_controller.rb",
+		"/Users/Amorim/workspace/meuprojeto01/app/controllers/alunos_controller.rb",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/stylesheets/alunos.scss",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/javascripts/alunos.coffee",
+		"/Users/Amorim/workspace/meuprojeto01/MeuProjeto01.sublime-project",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/stylesheets/scaffolds.scss",
+		"/Users/Amorim/workspace/meuprojeto01/app/views/alunos/index.html.erb",
+		"/Users/Amorim/workspace/meuprojeto01/app/assets/stylesheets/application.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/Amorim/workspace/meuprojeto01"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"asset_path",
+			"image"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/funcionarios/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 1478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								731,
+								731
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/assets/javascripts/application.js",
+					"settings":
+					{
+						"buffer_size": 1019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								878,
+								878
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 1591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1589,
+								1589
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 297.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/assets/stylesheets/application.css.scss",
+					"settings":
+					{
+						"buffer_size": 645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/Amorim/workspace/AtivCompl/AtivCompl.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 311.0,
+	"status_bar_visible": true
+}

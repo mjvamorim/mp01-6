@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Setores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codsetor</th>
+      <th>Nomesetor</th>
+      <th>Filial</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @setores.each do |setor| %>
+      <tr>
+        <td><%= setor.codsetor %></td>
+        <td><%= setor.nomesetor %></td>        
+        <td><%= setor.filial.nomefilial if setor.filial %></td>
+        <td><%= link_to 'Show', setor %></td>
+        <td><%= link_to 'Edit', edit_setor_path(setor) %></td>
+        <td><%= link_to 'Destroy', setor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+ <%= will_paginate @setores, previous_label: "Anterior", next_label: "Próxima" %> <br/>
+<%= link_to 'New Setor', new_setor_path %>

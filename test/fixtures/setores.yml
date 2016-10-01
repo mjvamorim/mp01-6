@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codsetor: 1
+  nomesetor: MyString
+
+two:
+  codsetor: 1
+  nomesetor: MyString
